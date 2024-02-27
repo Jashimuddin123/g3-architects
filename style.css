@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+/* header sction style start here  */
+header{
+    background-color: antiquewhite;
+    padding: 2rem 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav-title{
+    font-size: 2rem;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+ 
+    list-style: none;
+}
+.navbar ul > li{
+    margin-right: 2rem;
+}
+
+/* banner section styles start here */
+
+.banner-container{
+   
+ max-width: 800px;
+  align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+}
+.banner-title{
+    color: black;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.banner-description{
+    text-align: center;
+    margin: 0 auto;
+   
+    font-size: 1rem;
+    color: gray;
+}
+.banner-btn{
+    background-color: #FF900E;
+    color: white;
+    padding: .7rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+}
+
+.banner-img{
+    max-width: 80%;
+    display: flex;
+ margin: auto;
+}
+
+
+/* banner section styles ends here */
+/* header sction style ends here  */
+
+/* fature section  styles start here */
+.feature-section{
+ 
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin: 2rem auto;
+
+   
+
+
+}
+.img-container{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 2rem 0;
+
+   
+}
+.feature-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.quick-list{
+  color: gray;
+}
+
+.text-feature{
+    font-weight: bolder;
+    color: #FF900E;
+}
+.feature-description{
+    width: 400px;
+    color: gray;
+    font-size: 1rem;
+    margin-top: .6rem;
+}
+.img-container> img{
+width: 80%;
+  
+   
+}
+
+/* fature section  styles ends here */
+
+/* love seection start hre */
+.love-section{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 3rem;
+margin-bottom: 8rem;
+margin-top: 4rem;
+}
+.feauter-title{
+    font-size: 2.4rem;
+   
+}
+.feature-description{
+    color: grey;
+   
+    font-size: 1rem;
+}
+
+.card{
+   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    /* background-color: rgb(161, 156, 156); */
+    padding: 1.6rem .5rem;
+    border-radius: .3rem;
+    margin-right: 2rem;
+    transition: transform .5sec;
+}
+.card h1{
+    font-size: 1.5rem;
+   color: cornflowerblue;
+}
+.card p{
+    color: gray;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+.card:hover{
+background-color: lightblue;
+    transform: scale(.8rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+.img-div img{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.button-badge{
+    background-color: #FF900E;
+    max-width: 200px;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+    right: 3rem;
+    border-radius: .3rem;
+}
+.button-badge h3{
+    font-size: 2rem;
+}
+/* love seection ends hre */
+
+/* some fact section styles start here */
+.fact-section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.fact-title{
+font-size: 2rem;
+}
+.fact-description{
+width: 40%;
+padding: .5rem;
+color: gray;
+font-size: 1rem;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+.fact-card{
+ 
+    text-align: center;
+   width: 150px;
+    border: 1px solid #FF900E;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    transition: transform 4sec;
+}
+.fact-card:hover{
+    transform: scale(1.1);
+}
+
+.fact-card img{
+    width: 2rem;
+
+}
+.fact-card p{
+    color: gray;
+    font-size: .6rem;
+}
+/* some fact section styles ends here */
+
+/* sponspors section styles start here */
+.sponspors-section{
+    max-width: 1000px;
+    margin: 4rem auto;
+   
+}
+.sponspors-title{
+    text-align: center;
+    font-size: 2rem;
+}
+.sponspors-description{
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin: 1rem 0;
+}
+.icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.icons-container img{
+    width: 6rem;
+    margin: 1rem auto;
+}
+/* sponspors section styles ends here */
+
+/* footer section styles strt here */
+footer{
+    max-width: 800px;
+    background-color: antiquewhite;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    color: gray;
+    margin: 3rem auto;
+}
+/* footer section styles ends here */
+
+
+/* responsive media quary for mobile device 576px */
+
+@media screen and (max-width:576px) {
+     .navbar,
+     .feature-section,
+     .love-section
+    
+     {
+      flex-direction: column;   
+      margin-bottom: 2rem;    
+     }
+     .navbar ul{
+        margin-top: 2rem;
+     }
+     .banner-description{
+      
+     }
+
+     .img-container{
+        grid-template-columns: 1fr;
+      
+     }
+     .img-container>img{
+        width: 100%;
+     }
+     .feature-container{
+        margin-top: 2rem;
+        text-align: center;
+     }
+     .feature-description{
+        padding: 0 2rem;
+     }
+     .love-container{
+        padding: 2rem;
+     }
+    .img-div img{
+     width: 80%;
+     margin-left: 4rem;
+     text-align: center;
+    }
+
+    .fact-section{
+        text-align: center;
+    }
+    .fact-section p{
+        width: 350px;
+    }
+     .card-container{
+        flex-direction: column;
+        margin: 0 auto;
+        margin-left: 4rem;
+     }
+     .fact-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem auto;
+     }
+     .icons-container{
+        flex-direction: column;
+     }
+     footer{
+        text-align: center;
+        max-width: 100%;
+        margin-left: 2rem;
+     }
+}
+
+/* media quary for tablate device 992px */
+
+@media (min-width:576px) and (max-width:992px) {
+    .love-section{
+        padding: 2rem;
+    }
+    .fact-section{
+        text-align: center;
+        align-items: center;
+
+    }
+    .fact-section p{
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    .card-container{
+        padding: .5rem 1rem;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+
+ margin: 0 auto;
+     }
+    .fact-card{
+        text-align: center;
+        align-items: center;
+      
+       margin: 0 auto;
+       margin: .5rem;
+      
+     }
+     .fact-card img{
+        margin: 0 auto;
+     }
+}
+
